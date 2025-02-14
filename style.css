@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 50px;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ffdd33;
+}
+
+#qrcodeContainer {
+    margin-top: 20px;
+    position: center;
+}
+
+#qrcodeContainer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+#qrCodeImage {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 15px auto; /* Centraliza a imagem */
+    border-radius: 8px;
+    justify-content: center;
+}
