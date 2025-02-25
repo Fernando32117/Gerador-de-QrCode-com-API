@@ -1,3 +1,18 @@
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -7,8 +22,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .container {
@@ -17,6 +30,8 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     width: 350px;
+    margin-left: 50px;
+    margin: 50px;
 }
 
 input {
@@ -27,6 +42,7 @@ input {
     border-radius: 5px;
     text-align: center;
     font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -38,8 +54,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 16px;
-    margin-top: 10px;
+    animation: pulse 1.5s infinite;
 }
 
 button:hover {
@@ -64,4 +79,19 @@ button:hover {
     margin: 15px auto; /* Centraliza a imagem */
     border-radius: 8px;
     justify-content: center;
+}
+
+@media (max-width: 768px) {  
+    .container {  
+        width: 85%;  
+        padding: 15px; 
+    }  
+
+    input {  
+        width: 80%; 
+    }  
+
+    button {  
+        width: 60%; 
+    }  
 }
