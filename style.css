@@ -76,22 +76,30 @@ button:hover {
     width: 200px;
     height: 200px;
     display: flex;
-    margin: 15px auto; /* Centraliza a imagem */
+    margin: 15px auto;
     border-radius: 8px;
     justify-content: center;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
+    body {  
+        margin: 0 auto; 
+    }
+    
     .container {  
-        width: 85%;  
-        padding: 15px; 
-    }  
+        width: 98%;  
+        padding: 40px; 
+    }
 
     input {  
-        width: 80%; 
+        width: 80%;
+        font-size: auto;
+        margin: 15px auto;
     }  
 
     button {  
-        width: 60%; 
-    }  
+        width: 150px; 
+        font-size: auto;
+        margin: 5px auto;
+    }
 }
